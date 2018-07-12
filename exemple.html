@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI Elements</title>
+    <link rel="stylesheet" href="css/ui-min.css" media="all" />
+    <link rel="stylesheet" href="css/style_ui.css" media="all" />
+</head>
+	
+<body class="theme-bleu">
+   
+   <div class="shadow background box20 white-color relative">
+        <h1>UI Elements</h1>
+    </div>
+    <div class="bg box20">
+        <h2>Colors</h2>
+    </div>
+    <div class="section box20">
+        <ul class="horizontal">
+            <li class="li-rect">
+                <div class="essentiel rect"></div>
+                <h4>essentiel</h4>
+            </li>
+            <li class="li-rect">
+                <div class="violet rect"></div>
+                <h4>violet</h4>
+            </li>
+            <li class="li-rect">
+                <div class="bleu rect"></div>
+                <h4>bleu</h4>
+            </li>
+            <li class="li-rect">
+                <div class="red rect"></div>
+                <h4>red</h4>
+            </li>
+            <li class="li-rect">
+                <div class="bleu-active rect"></div>
+                <h4>bleu-active</h4>
+            </li>
+            <li class="li-rect">
+                <div class="bleu-web rect"></div>
+                <h4>bleu-web</h4>
+            </li>
+            <li class="li-rect">
+                <div class="bleu-violet rect"></div>
+                <h4>bleu-violet</h4>
+            </li>
+            <li class="li-rect">
+                <div class="yellow rect"></div>
+                <h4>yellow</h4>
+            </li>
+            <li class="li-rect">
+                <div class="green rect"></div>
+                <h4>green</h4>
+            </li>
+            <li class="li-rect">
+                <div class="rose rect"></div>
+                <h4>rose</h4>
+            </li>
+        </ul>
+        <div class="clr"></div>
+    </div>
+    
+     <div class="bg box20">
+        <h2>Inputs</h2>
+    </div>
+    <div class="section box20">
+       <ul class="horizontal row gather-20">
+           <li class="li-element col-3">
+               <input type="text" name="name" placeholder="enter a name" />
+               <h4 class="top10 align-center">Normal State</h4>
+           </li>
+           <li class="li-element col-3">
+               <input type="text" name="name" placeholder="enter a name" class="focus" />
+               <h4 class="top10 align-center">Focus State</h4>
+           </li>
+           <li class="li-element col-3 last-col">
+               <input type="text" name="name" placeholder="enter a name" value="John Doe" class="focus" />
+               <h4 class="top10 align-center">Fill State</h4>
+           </li>
+       </ul>
+       <div class="clr"></div>
+        
+    </div>
+    
+    <div class="bg box20">
+        <h2>Buttons</h2>
+    </div>
+    <div class="section box20">
+        <ul class="row gather-20">
+            <li class="col-6 align-center">
+                <input type="button" value="Submit" class="bleu-active bleu-active-shadow" />
+                <h4 class="top10">Normal State</h4>
+            </li>
+            <li class="col-6 align-center">
+                <input type="button" value="Submit" class="bleu-active bleu-active-shadow-hover hover" />
+                <h4 class="top10">Hover State</h4>
+            </li>
+            <li class="col-6 align-center">
+                <input type="button" value="Submit" class="bleu-active bleu-active-shadow  bleu-active-shadow-active" />
+                <h4 class="top10">Active State</h4>
+            </li>
+            <li class="col-6 align-center">
+                <input type="button" value="Submit" class="bleu-violet bleu-violet-shadow" />
+            </li>
+            <li class="col-6 align-center">
+                <input type="button" value="Submit" class="rose rose-shadow" />
+            </li>
+            <li class="col-6 align-center">
+                <input type="button" value="Submit" class="green green-shadow" />
+            </li>
+        </ul>
+        <div class="clr"></div>
+    </div>
+    
+    <div class="bg box20">
+        <h2>Check Box & Radio</h2>
+    </div>
+    
+    <div class="section box30">
+        <ul class="horizontal row gather-20">
+            <li class="relative col-4">
+                <input type="checkbox" name="name" value="" />
+                <label>Label Checkbox</label>                
+            </li>
+            <li class="relative col-4">
+                <input type="checkbox" name="name" value="" checked="checked" />
+                <label>Label Checkbox</label>  
+            </li>
+            <li class="relative col-4">
+                <input type="radio" name="name" value="" />
+                <label>Label Radio</label>  
+            </li>
+            <li class="relative col-4">
+                <input type="radio" name="name" value="" checked="checked" />
+                <label>Label Radio</label>  
+            </li>
+        </ul>
+        <div class="clr"></div>
+    </div>
+    
+    <div class="bg box20">
+        <h2>Select box</h2>
+    </div>
+    
+    <div class="section box30">
+       <div class="row gather-20">
+           <div class="col-4">
+               <p>
+                    <label class="bottom5 block">Label Select</label>
+                    <select name="select">
+                        <option value="">Select option</option>
+                        <option value="1">Option type 1</option>
+                        <option value="2">Option type 2</option>
+                        <option value="3">Option type 3</option>
+                    </select>
+                </p>
+           </div>
+           <div class="col-4">
+               <p>
+                    <label class="bottom5 block">Label Select</label>
+                    <select name="select" class="focus">
+                        <option value="">Select option</option>
+                        <option value="1">Option type 1</option>
+                        <option value="2">Option type 2</option>
+                        <option value="3">Option type 3</option>
+                    </select>
+                </p>
+           </div>
+           <div class="clr"></div>
+       </div>
+        
+    </div>
+    
+    <div class="bg box20">
+        <h2>Progress Bar</h2>
+    </div>
+    <div class="section box20">
+       <div class="row gather-20">
+           <div class="col-4">
+              <label class="block bottom5">Label Progrees Bar</label>
+               <div class="progress-bar">
+                    <div class="value-progress red red-shadow" style="width: 15%;"></div>
+                </div>
+           </div>
+           <div class="col-4">
+              <label class="block bottom5">Label Progrees Bar</label>
+               <div class="progress-bar">
+                    <div class="value-progress yellow yellow-shadow" style="width: 40%;"></div>
+                </div>
+           </div>
+           
+           <div class="col-4">
+              <label class="block bottom5">Label Progrees Bar</label>
+               <div class="progress-bar">
+                    <div class="value-progress bleu-web bleu-web-shadow" style="width: 70%;"></div>
+                </div>
+           </div>
+           
+           <div class="col-4">
+              <label class="block bottom5">Label Progrees Bar</label>
+               <div class="progress-bar">
+                    <div class="value-progress green green-shadow" style="width: 90%;"></div>
+                </div>
+           </div>
+
+           <div class="clr"></div>
+       </div>
+        
+        
+    </div>
+    
+    <div class="bg box20">
+        <h2>Table</h2>
+    </div>
+    <div class="section box20">
+        <table cellSpacing="0" cellPadding="0" border="0" width="100%">
+            <thead class="header-table shadow">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Job</th>
+                    <th>About</th>
+                </tr>
+                
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>#1</td>
+                    <td>John Doe</td>
+                    <td>john.doe@exemple.com</td>
+                    <td>Developper</td>
+                    <td>lorem ipsum</td>  
+                </tr>
+                <tr class="zebra">
+                    <td>#2</td>
+                    <td>John Doe</td>
+                    <td>john.doe@exemple.com</td>
+                    <td>Developper</td>
+                    <td>lorem ipsum</td>  
+                </tr>
+                <tr>
+                    <td>#3</td>
+                    <td>John Doe</td>
+                    <td>john.doe@exemple.com</td>
+                    <td>Developper</td>
+                    <td>lorem ipsum</td>  
+                </tr>
+                <tr class="zebra">
+                    <td>#4</td>
+                    <td>John Doe</td>
+                    <td>john.doe@exemple.com</td>
+                    <td>Developper</td>
+                    <td>lorem ipsum</td>  
+                </tr>
+                <tr>
+                    <td>#5</td>
+                    <td>John Doe</td>
+                    <td>john.doe@exemple.com</td>
+                    <td>Developper</td>
+                    <td>lorem ipsum</td>  
+                </tr>
+                
+            </tbody>
+            
+            
+        </table>
+    </div>
+    
+    
+    <div class="bg box20">
+        <h2>Messages</h2>
+    </div>
+    
+    <div class="section box30">
+        <div class="row gather-20">
+            <div class="col-3">
+                <div class="message success">
+                    Neque porro quisquam est qui dolorem ipsum
+                </div>
+            </div>
+            
+            <div class="col-3">
+                <div class="message info">
+                    Neque porro quisquam est qui dolorem ipsum
+                </div>
+            </div>
+            
+            <div class="col-3">
+                <div class="message alert">
+                    Neque porro quisquam est qui dolorem ipsum
+                </div>
+            </div>
+            
+            <div class="clr"></div>
+        </div>
+        
+        
+    </div>
+    
+    <div class="bg box20">
+        <h2>Navigation</h2>
+    </div>
+    
+    <div class="section box30">
+         <div class="navigation white">
+            <ul class="horizontal">
+               <li><a href="#" class="active">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Products</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="clr"></div>
+        </div>
+    </div>
+    
+    
+    <div class="bg box20">
+        <h2>Popup / Modal</h2>
+    </div>
+    
+    <div class="section box30">
+        <div class="popup relative white shadow border">
+           <h2 class="bold">Neque porro quisquam est qui dolorem ipsum </h2>
+           <p class="top20 bottom20">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio quam, tincidunt sed leo at, mattis imperdiet velit. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+           </p>
+           
+           <div class="align-center">
+               <input type="button" value="cancel" class="gris shadow" />
+               <input type="button" value="Yes, Validate" class="red red-shadow" />
+           </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

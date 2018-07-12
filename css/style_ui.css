@@ -1,0 +1,12 @@
+.rect {
+    width: 100px;
+    height: 100px;
+}
+.section .li-rect+.li-rect {
+    margin-left: 20px;
+}
+.li-rect h4{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
