@@ -3,4 +3,4 @@ UI CSS project for create clean &amp; modern apps with less code
 
 
 ## Demo & Exemple
-See exemple.html for more information and details
+See "exemple.html" for more informations and details
