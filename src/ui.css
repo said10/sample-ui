@@ -1,16 +1,20 @@
 /*
-    Sample UI for integrate sample & clean UI with less code
+    Sample UI for Adding sample & clean UI with less code
 */
 
 /*
 Font Family
 */
-@import url("https://fonts.googleapis.com/css?family=Lato") screen;
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 /* reset */
 html, body, h1, h2, h3, h4, h5, h6, p, ul, ol {margin:0;padding : 0;}
 html, body {height:100%:}
 a {text-decoration : none;}
 a img {border:none;}
+.border-box {
+    box-sizing: border-box;
+}
+/*typos*/
 .regular, .normal, body, p, textarea, input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -19,7 +23,7 @@ a img {border:none;}
     font-weight: bold;
 }
 .light, .title, .sub-title, .barre-title {
-    font-weight: lighter;
+    font-weight: 300;
 }
 h1, h2, h3, h4 {
     font-weight: normal;
@@ -32,6 +36,9 @@ h2, .h2-like {
 }
 h3, .h3-like {
     font-size: 18px;
+}
+h4, .h4-like {
+    font-size: 16px;
 }
 input[type="button"], button, .btn, input[type="submit"] {
     font-size: 16px;
@@ -229,6 +236,9 @@ body, input, textarea, select, label, p, .bg, .theme-white .navigation a {
 }
 .border {
     border: #ccd3e0 solid 1px;
+}
+.border-dashed {
+    border: #ccd3e0 dashed 1px;
 }
 .items li+li, .items div+div {
     border-top: #ccd3e0 solid 1px;
@@ -538,30 +548,88 @@ Grid
     padding-right: 15px;
     box-sizing: border-box;
 }
-.row.gather-15 {
+.row.gutter-15 {
     padding-left: 15px;
     padding-right: 15px;
 }
-.row.gather-20 {
+.row.gutter-20 {
     padding-left: 20px;
     padding-right: 20px;
 }
-.row.gather-30 {
+.row.gutter-30 {
     padding-left: 30px;
     padding-right: 30px;
 }
-.gather-15 .col-1, .gather-15 .col-2, .gather-15 .col-3, .gather-15 .col-4, .gather-15 .col-5, .gather-15 .col-6, .gather-15 .col-7, .gather-15 .col-8, .gather-15 .col-9, .gather-15 .col-10, .gather-15 .col-11, .gather-15 .col-12{
+.gutter-15 .col-1, .gutter-15 .col-2, .gutter-15 .col-3, .gutter-15 .col-4, .gutter-15 .col-5, .gutter-15 .col-6, .gutter-15 .col-7, .gutter-15 .col-8, .gutter-15 .col-9, .gutter-15 .col-10, .gutter-15 .col-11, .gutter-15 .col-12{
     padding-right: 15px;
 }
-.gather-20 .col-1, .gather-20 .col-2, .gather-20 .col-3, .gather-20 .col-4, .gather-20 .col-5, .gather-20 .col-6, .gather-20 .col-7, .gather-20 .col-8, .gather-20 .col-9, .gather-20 .col-10, .gather-20 .col-11, .gather-20 .col-12{
+.gutter-20 .col-1, .gutter-20 .col-2, .gutter-20 .col-3, .gutter-20 .col-4, .gutter-20 .col-5, .gutter-20 .col-6, .gutter-20 .col-7, .gutter-20 .col-8, .gutter-20 .col-9, .gutter-20 .col-10, .gutter-20 .col-11, .gutter-20 .col-12{
     padding-right: 20px;
 }
-.gather-30 .col-1, .gather-30 .col-2, .gather-30 .col-3, .gather-30 .col-4, .gather-30 .col-5, .gather-30 .col-6, .gather-30 .col-7, .gather-30 .col-8, .gather-30 .col-9, .gather-30 .col-10, .gather-30 .col-11, .gather-30 .col-12{
+.gutter-30 .col-1, .gutter-30 .col-2, .gutter-30 .col-3, .gutter-30 .col-4, .gutter-30 .col-5, .gutter-30 .col-6, .gutter-30 .col-7, .gutter-30 .col-8, .gutter-30 .col-9, .gutter-30 .col-10, .gutter-30 .col-11, .gutter-30 .col-12{
     padding-right: 30px;
 }
 .row .last-col {
     padding-right: 0px;
 }
+/*responsive Grid*/
+@-ms-viewport {
+  width: device-width;
+}
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+.container {
+  width: 94%;
+  padding-right: 3%;
+  padding-left: 3%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 992px) {
+    .responsive-model-1 .row .col-1, .responsive-model-1 .row .col-2, .responsive-model-1 .row .col-3, .responsive-model-1 .row .col-4, .responsive-model-1 .row .col-5, .responsive-model-1 .row .col-6, .responsive-model-1 .row .col-7, .responsive-model-1 .row .col-8, .responsive-model-1 .row .col-9, .responsive-model-1 .row .col-10, .responsive-model-1 .row .col-11, .responsive-model-1 .row .col-12 {
+        width: 100%;
+    }
+    .gutter-15 .last-col {
+        padding-right: 15px;
+    }
+    .gutter-20 .last-col {
+        padding-right: 20px;
+    }
+    .gutter-30 .last-col {
+        padding-right: 30px;
+    }
+    .responsive-model-2 .row .col-1, .responsive-model-2 .row .col-2, .responsive-model-2 .row .col-3 {
+        width: 100%;
+    }
+    
+    .responsive-model-2 .row .col-4, .responsive-model-2 .row .col-5, .responsive-model-2 .row .col-6, .responsive-model-2 .row .col-7, .responsive-model-2 .row .col-8, .responsive-model-2 .row .col-9, .responsive-model-2 .row .col-10, .responsive-model-2 .row .col-11, .responsive-model-2 .row .col-12 {
+        width: 50%;
+    }
+    
+    .responsive-model-3 .row .col-1, .responsive-model-3 .row .col-2 {
+        width: 50%;
+    }
+    
+    .responsive-model-3 .row .col-3, .responsive-model-3 .row .col-4, .responsive-model-3 .row .col-5, .responsive-model-3 .row .col-6, .responsive-model-3 .row .col-7, .responsive-model-3 .row .col-8, .responsive-model-3 .row .col-9, .responsive-model-3 .row .col-10, .responsive-model-3 .row .col-11, .responsive-model-3 .row .col-12 {
+        width: 33.33%;
+    }
+}
+@media (max-width: 768px) {
+    
+    
+}
+@media (max-width: 992px) {
+    
+    
+}
+@media (max-width: 1200px) {
+   
+}
+
+
 /*FORM*/
 form label{
     display: block;
