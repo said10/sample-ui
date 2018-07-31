@@ -6,6 +6,43 @@
 Font Family
 */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+/*
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.eot');
+    src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato-regular-webfont.ttf') format('truetype'),
+         url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latosemibold';
+    src: url('../fonts/lato-semibold-webfont.eot');
+    src: url('../fonts/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-semibold-webfont.woff') format('woff'),
+         url('../fonts/lato-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/lato-semibold-webfont.svg#latosemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-light-webfont.eot');
+    src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato-light-webfont.woff') format('woff'),
+         url('../fonts/lato-light-webfont.ttf') format('truetype'),
+         url('../fonts/lato-light-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+
 /* reset */
 html, body, h1, h2, h3, h4, h5, h6, p, ul, ol {margin:0;padding : 0;}
 html, body {height:100%:}
@@ -28,16 +65,16 @@ a img {border:none;}
 h1, h2, h3, h4 {
     font-weight: normal;
 }
-h1, .h1-like {
+h1, .h1-like, .font24 {
     font-size: 24px;
 }
-h2, .h2-like {
+h2, .h2-like, .font20 {
     font-size: 20px;
 }
-h3, .h3-like {
+h3, .h3-like, .font18 {
     font-size: 18px;
 }
-h4, .h4-like {
+h4, .h4-like, .font16 {
     font-size: 16px;
 }
 input[type="button"], button, .btn, input[type="submit"] {
@@ -62,8 +99,11 @@ COLORS
 .gris-bg {
     background-color: #f2f4f7;
 }
-body, input, textarea, select, label, p, .bg, .theme-white .navigation a {
+body, input, textarea, select, .bg, .theme-white .navigation a {
     color: #58658a;
+}
+body, p {
+    line-height: 24px;
 }
 .white, .theme-white .background {
     background-color: #fff;
@@ -94,7 +134,7 @@ body, input, textarea, select, label, p, .bg, .theme-white .navigation a {
     background-color: #712d90;
 }
 .violet-shadow, .theme-violet .shadow {
-    box-shadow: 3px 3px 10px rgba(113,45,144, 0.2);
+    box-shadow: 3px 3px 10px rgba(113,45,144, 0.6);
 }
 .violet-shadow-hover, .violet-shadow.hover:hover, .theme-violet input[type="button"].background:hover, .theme-violet input[type="submit"].background:hover, .theme-violet .btn.background:hover, .theme-violet button.background:hover, input[type="button"].violet:hover, input[type="submit"].violet:hover, .btn.violet:hover, button.violet:hover {
     box-shadow: 6px 6px 12px rgba(113,45,144, 0.6);
@@ -110,9 +150,9 @@ body, input, textarea, select, label, p, .bg, .theme-white .navigation a {
     background-color: #2e2b9a;
 }
 .bleu-shadow, .theme-bleu .shadow  {
-    box-shadow: 3px 3px 10px rgba(46,43,154, 0.2);
+    box-shadow: 3px 3px 10px rgba(46,43,154, 0.6);
 }
-.bleu-shadow-hover, .bleu-shadow.hover:hover .theme-bleu input[type="button"].background:hover, .theme-bleu input[type="submit"].background:hover, .theme-bleu .btn.background:hover, .theme-bleu button.background:hover, input[type="button"].bleu:hover, input[type="submit"].bleu:hover, .btn.bleu:hover, button.bleu:hover {
+.bleu-shadow-hover, .bleu-shadow.hover:hover, .theme-bleu input[type="button"].background:hover, .theme-bleu input[type="submit"].background:hover, .theme-bleu .btn.background:hover, .theme-bleu button.background:hover, input[type="button"].bleu:hover, input[type="submit"].bleu:hover, .btn.bleu:hover, button.bleu:hover {
     box-shadow: 6px 6px 12px rgba(46,43,154, 0.6);
 }
 .bleu-shadow-active, .bleu-shadow.active:active, .theme-bleu input[type="button"].background:active, .theme-bleu input[type="submit"].background:active, .theme-bleu .btn.background:active, .theme-bleu button.background:active, input[type="button"].bleu:active, input[type="submit"].bleu:active, .btn.bleu:active, button.bleu:active {
@@ -126,9 +166,9 @@ body, input, textarea, select, label, p, .bg, .theme-white .navigation a {
     background-color: #e84b3a; 
 }
 .red-shadow, .theme-red .shadow, .message.alert {
-    box-shadow: 3px 3px 10px rgba(232,75,58, 0.2);
+    box-shadow: 3px 3px 10px rgba(232,75,58, 0.6);
 }
-.red-shadow-hover, .red-shadow.hover:hover .theme-red input[type="button"].background:hover, .theme-red input[type="submit"].background:hover, .theme-red .btn.background:hover, .theme-red button.background:hover, input[type="button"].red:hover, input[type="submit"].red:hover, .btn.red:hover, button.red:hover {
+.red-shadow-hover, .red-shadow.hover:hover, .theme-red input[type="button"].background:hover, .theme-red input[type="submit"].background:hover, .theme-red .btn.background:hover, .theme-red button.background:hover, input[type="button"].red:hover, input[type="submit"].red:hover, .btn.red:hover, button.red:hover {
     box-shadow: 6px 6px 12px rgba(232,75,58, 0.6);
 }
 .red-shadow-active, .red-shadow.active:active, .theme-red input[type="button"].background:active, .theme-red input[type="submit"].background:active, .theme-red .btn.background:active, .theme-red button.background:active, input[type="button"].red:active, input[type="submit"].red:active, .btn.red:active, button.red:active {
@@ -142,9 +182,9 @@ body, input, textarea, select, label, p, .bg, .theme-white .navigation a {
     background-color: #38baf6;
 }
 .bleu-active-shadow, .theme-bleu-active .shadow  {
-    box-shadow: 3px 3px 10px rgba(56,186,246, 0.2);
+    box-shadow: 3px 3px 10px rgba(56,186,246, 0.6);
 }
-.bleu-active-shadow-hover, .bleu-active-shadow.hover:hover .theme-bleu-active input[type="button"].background:hover, .theme-bleu-active input[type="submit"].background:hover, .theme-bleu-active .btn.background:hover, .theme-bleu-active button.background:hover, input[type="button"].bleu-active:hover,input[type="submit"].bleu-active:hover, .btn.bleu-active:hover, button.bleu-active:hover {
+.bleu-active-shadow-hover, .bleu-active-shadow.hover:hover, .theme-bleu-active input[type="button"].background:hover, .theme-bleu-active input[type="submit"].background:hover, .theme-bleu-active .btn.background:hover, .theme-bleu-active button.background:hover, input[type="button"].bleu-active:hover,input[type="submit"].bleu-active:hover, .btn.bleu-active:hover, button.bleu-active:hover {
     box-shadow: 6px 6px 12px rgba(56,186,246, 0.6);
 }
 .bleu-active-shadow-active, .bleu-active-shadow.active:active, .theme-bleu-active input[type="button"].background:active, .theme-bleu-active input[type="submit"].background:active, .theme-bleu-active .btn.background:active, .theme-bleu-active button.background:active, input[type="button"].bleu-active:active,input[type="submit"].bleu-active:active, .btn.bleu-active:active, button.bleu-active:active {
@@ -158,9 +198,9 @@ body, input, textarea, select, label, p, .bg, .theme-white .navigation a {
     background-color: #107afe;
 }
 .bleu-web-shadow, .theme-bleu-web .shadow, .message.info  {
-    box-shadow: 3px 3px 10px rgba(16,122,254, 0.2);
+    box-shadow: 3px 3px 10px rgba(16,122,254, 0.6);
 }
-.bleu-web-shadow-hover, .bleu-web-shadow.hover:hover .theme-bleu-web input[type="button"].background:hover, .theme-bleu-web input[type="submit"].background:hover, .theme-bleu-web .btn.background:hover, .theme-bleu-web button.background:hover, input[type="button"].bleu-web:hover,input[type="submit"].bleu-web:hover, .btn.bleu-web:hover, button.bleu-web:hover {
+.bleu-web-shadow-hover, .bleu-web-shadow.hover:hover, .theme-bleu-web input[type="button"].background:hover, .theme-bleu-web input[type="submit"].background:hover, .theme-bleu-web .btn.background:hover, .theme-bleu-web button.background:hover, input[type="button"].bleu-web:hover,input[type="submit"].bleu-web:hover, .btn.bleu-web:hover, button.bleu-web:hover {
     box-shadow: 6px 6px 12px rgba(16,122,254, 0.6);
 }
 .bleu-web-shadow-hover, .bleu-web-shadow.active:active, .theme-bleu-web input[type="button"].background:active, .theme-bleu-web input[type="submit"].background:active, .theme-bleu-web .btn.background:active, .theme-bleu-web button.background:active, input[type="button"].bleu-web:active,input[type="submit"].bleu-web:active, .btn.bleu-web:active, button.bleu-web:active {
@@ -174,9 +214,9 @@ body, input, textarea, select, label, p, .bg, .theme-white .navigation a {
     background-color: #6c55f0; 
 }
 .bleu-violet-shadow, .theme-bleu-violet .shadow {
-    box-shadow: 3px 3px 10px rgba(108,85,240, 0.2);
+    box-shadow: 3px 3px 10px rgba(108,85,240, 0.6);
 }
-.bleu-violet-shadow-hover, .bleu-violet-shadow.hover:hover .theme-bleu-violet input[type="button"].background:hover, .theme-bleu-violet input[type="submit"].background:hover, .theme-bleu-violet .btn.background:hover, .theme-bleu-violet button.background:hover, input[type="button"].bleu-violet:hover,input[type="submit"].bleu-violet:hover, .btn.bleu-violet:hover, button.bleu-violet:hover {
+.bleu-violet-shadow-hover, .bleu-violet-shadow.hover:hover, .theme-bleu-violet input[type="button"].background:hover, .theme-bleu-violet input[type="submit"].background:hover, .theme-bleu-violet .btn.background:hover, .theme-bleu-violet button.background:hover, input[type="button"].bleu-violet:hover,input[type="submit"].bleu-violet:hover, .btn.bleu-violet:hover, button.bleu-violet:hover {
     box-shadow: 6px 6px 12px rgba(108,85,240, 0.6);
 }
 .bleu-violet-shadow-active, .bleu-violet-shadow.active:active, .theme-bleu-violet input[type="button"].background:active, .theme-bleu-violet input[type="submit"].background:active, .theme-bleu-violet .btn.background:active, .theme-bleu-violet button.background:active, input[type="button"].bleu-violet:active,input[type="submit"].bleu-violet:active, .btn.bleu-violet:active, button.bleu-violet:active {
@@ -186,13 +226,13 @@ body, input, textarea, select, label, p, .bg, .theme-white .navigation a {
 .bleu-violet-color, .theme-bleu-violet .color, .theme-bleu-violet .navigation a {
     color: #6c55f0; 
 }
-.yellow, .theme-yellow .background {
+.yellow, .theme-yellow .background, .message.warning {
     background-color: #ffc400;
 }
-.yellow-shadow, .theme-yellow .shadow {
-    box-shadow: 3px 3px 10px rgba(255,196,0, 0.2);
+.yellow-shadow, .theme-yellow .shadow , .message.warning{
+    box-shadow: 3px 3px 10px rgba(255,196,0, 0.6);
 }
-.yellow-shadow-hover, .yellow-shadow.hover:hover .theme-yellow input[type="button"].background:hover, .theme-yellow input[type="submit"].background:hover, .theme-yellow .btn.background:hover, .theme-yellow button.background:hover, input[type="button"].yellow:hover, input[type="submit"].yellow:hover, .btn.yellow:hover, button.yellow:hover {
+.yellow-shadow-hover, .yellow-shadow.hover:hover, .theme-yellow input[type="button"].background:hover, .theme-yellow input[type="submit"].background:hover, .theme-yellow .btn.background:hover, .theme-yellow button.background:hover, input[type="button"].yellow:hover, input[type="submit"].yellow:hover, .btn.yellow:hover, button.yellow:hover {
     box-shadow: 6px 6px 12px rgba(255,196,0, 0.6);
 }
 .yellow-shadow-active, .yellow-shadow.active:active, .theme-yellow input[type="button"].background:active, .theme-yellow input[type="submit"].background:active, .theme-yellow .btn.background:active, .theme-yellow button.background:active, input[type="button"].yellow:active, input[type="submit"].yellow:active, .btn.yellow:active, button.yellow:active {
@@ -206,9 +246,9 @@ body, input, textarea, select, label, p, .bg, .theme-white .navigation a {
     background-color: #00e7b4;
 }
 .green-shadow, .theme-green .shadow, .message.success {
-    box-shadow: 3px 3px 10px rgba(0,231,190, 0.2);
+    box-shadow: 3px 3px 10px rgba(0,231,190, 0.6);
 }
-.green-shadow-hover, .green-shadow.hover:hover .theme-green input[type="button"].background:hover, .theme-green input[type="submit"].background:hover, .theme-green .btn.background:hover, .theme-green button.background:hover, input[type="button"].green:hover, input[type="submit"].green:hover, .btn.green:hover, button.green:hover {
+.green-shadow-hover, .green-shadow.hover:hover, .theme-green input[type="button"].background:hover, .theme-green input[type="submit"].background:hover, .theme-green .btn.background:hover, .theme-green button.background:hover, input[type="button"].green:hover, input[type="submit"].green:hover, .btn.green:hover, button.green:hover {
     box-shadow: 6px 6px 12px rgba(0,231,190, 0.6);
 }
 .green-shadow-active, .green-shadow.active:active, .theme-green input[type="button"].background:active, .theme-green input[type="submit"].background:active, .theme-green .btn.background:active, .theme-green button.background:active, input[type="button"].green:active, input[type="submit"].green:active, .btn.green:active, button.green:active {
@@ -224,7 +264,7 @@ body, input, textarea, select, label, p, .bg, .theme-white .navigation a {
 .rose-shadow, .theme-rose .shadow {
     box-shadow: 3px 3px 5px rgba(255,65,103, 0.6);
 }
-.rose-shadow-hover, .rose-shadow.hover:hover .theme-rose input[type="button"].background:hover, .theme-rose input[type="submit"].background:hover, .theme-rose .btn.background:hover, .theme-rose button.background:hover, input[type="button"].rose:hover, input[type="submit"].rose:hover, .btn.rose:hover, button.rose:hover {
+.rose-shadow-hover, .rose-shadow.hover:hover, .theme-rose input[type="button"].background:hover, .theme-rose input[type="submit"].background:hover, .theme-rose .btn.background:hover, .theme-rose button.background:hover, input[type="button"].rose:hover, input[type="submit"].rose:hover, .btn.rose:hover, button.rose:hover {
     box-shadow: 6px 6px 12px rgba(255,65,103, 0.6);
 }
 .rose-shadow-active, .rose-shadow.active:active, .theme-rose input[type="button"].background:active, .theme-rose input[type="submit"].background:active, .theme-rose .btn.background:active, .theme-rose button.background:active, input[type="button"].rose:active, input[type="submit"].rose:active, .btn.rose:active, button.rose:active {
@@ -242,6 +282,9 @@ body, input, textarea, select, label, p, .bg, .theme-white .navigation a {
 }
 .items li+li, .items div+div {
     border-top: #ccd3e0 solid 1px;
+}
+.theme-essentiel .background, .theme-red .background, .theme-bleu-active .background, .theme-bleu-violet .background, .theme-bleu-web .background, .theme-bleu .background, .theme-yellow .background, .theme-rose .background, .theme-green .background, .theme-violet .background {
+    color: #fff;
 }
 /*
 UI
@@ -438,8 +481,24 @@ input[type="button"]:active, input[type="submit"]:active, .btn:active, button:ac
 .box20 {padding:20px;}
 .box25 {padding:25px;}
 .box30, .popup{padding:30px;}
+.boxHor5 {padding: 0 5px;}
+.boxHor10 {padding: 0 10px;}
+.boxHor15 {padding: 0 15px;}
+.boxHor20 {padding: 0 20px;}
+.boxHor25 {padding: 0 25px;}
+.boxHor30 {padding: 0 30px;}
+.boxHor40 {padding: 0 40px;}
+
+.boxVer5 {padding: 5px 0px;}
+.boxVer10 {padding: 10px 0px;}
+.boxVer15 {padding: 15px 0px;}
+.bboxVer20 {padding: 20px 0px;}
+.boxVer25 {padding: 25px 0px;}
+.boxVer30 {padding: 30px 0px;}
+.boxVer40 {padding: 40px 0px;}
+
 .pointer{ cursor: pointer;}
-.GPU-accelerated, .animate, input, .btn, button { 
+.GPU-accelerated, .animate, input, .btn, button, select, textarea { 
     -webkit-transform: translateZ(0);
    -moz-transform: translateZ(0);
    -ms-transform: translateZ(0);
@@ -580,15 +639,16 @@ html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
 }
-.container {
-  width: 94%;
-  padding-right: 3%;
-  padding-left: 3%;
-  margin-right: auto;
-  margin-left: auto;
-}
+
 
 @media (max-width: 992px) {
+    .container {
+      width: 94%;
+      padding-right: 3%;
+      padding-left: 3%;
+      margin-right: auto;
+      margin-left: auto;
+    }
     .responsive-model-1 .row .col-1, .responsive-model-1 .row .col-2, .responsive-model-1 .row .col-3, .responsive-model-1 .row .col-4, .responsive-model-1 .row .col-5, .responsive-model-1 .row .col-6, .responsive-model-1 .row .col-7, .responsive-model-1 .row .col-8, .responsive-model-1 .row .col-9, .responsive-model-1 .row .col-10, .responsive-model-1 .row .col-11, .responsive-model-1 .row .col-12 {
         width: 100%;
     }
