@@ -66,3 +66,33 @@ for apply a theme you have to add ".theme-NAME_OF_COLOR" in parent Element then 
 ### Layout
 - .animate : add Support to CSS transition
 - .container : div Container of Page
+
+### Grid
+the grid is based on 12 columns
+ - .row : parent of columns
+ - .row.gutter-15 : for a spacing of 15px between the columns 
+ - .row.gutter-20 : for a spacing of 20px between the columns 
+ - .row.gutter-30 : for a spacing of 30px between the columns 
+ 
+ - .last-col : to clean spacing and alignment in the last Column from a Grid 
+
+- .col-1
+- .col-2
+- .col-3
+- .col-4
+- .col-5
+- .col-6
+- .col-7
+- .col-8
+- .col-9
+- .col-10
+- .col-11
+- .col-12
+
+### Components
+- .message : for an Message Component
+- .success ! for un success Message
+- .warning ! for un warning Message
+- .info ! for un Info Message
+- .alert ! for un Error Message
+- .navigation : for an Menu Component

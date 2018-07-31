@@ -769,7 +769,7 @@ td {
     padding: 15px 1%;
     width: 23%;
 }
-.zebra td {
+.zebra td, tbody tr tr:nth-child(odd) td{
     background-color: #f5f6fa;
 }
 /*
